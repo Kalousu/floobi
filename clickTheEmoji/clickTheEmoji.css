@@ -89,10 +89,16 @@ main{
 .emoji{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-size: 3.25em;
     text-align: center;
+}
+
+.emoji > p{
+    font-size: 1em;
+}
+.emojiLocked{
+    filter: brightness(0%);
 }
 
 .common{

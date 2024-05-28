@@ -47,7 +47,7 @@ function createEmoji(emojiName){
     emoji.style.position = "absolute";
     emoji.style.width = "125px";
     emoji.style.left = Math.random() * boundary.right - 150 + "px";
-    emoji.style.top = Math.random() * boundary.bottom - 200 + "px";
+    emoji.style.top = Math.random() * boundary.bottom - 220 + "px";
     emoji.classList.add("appeared");
     
 
@@ -56,6 +56,7 @@ function createEmoji(emojiName){
     });
 
     emoji.addEventListener("click", () => {
+        document.getElementById(`${emojis.indexOf(emojiName)}`).classList.remove("emojiLocked");
         emoji.remove();
         emojisCollected++;
         emojiMap.set(emojis.indexOf(emojiName), emojiMap.get(emojis.indexOf(emojiName)) + 1);
