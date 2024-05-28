@@ -18,7 +18,7 @@ body{
     background: linear-gradient(90deg, rgb(0, 255, 170), rgb(40, 148, 103), rgb(0, 255, 170));
     background-blend-mode: color;
     background-size: 500%;
-    animation: animate 100s linear infinite;
+    animation: animate 40s linear infinite;
 }
 
 header{

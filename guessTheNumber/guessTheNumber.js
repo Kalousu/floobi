@@ -4,7 +4,7 @@ let numGenerated;
 let tries = 0;
 let active = false;
 var audio = new Audio("../audio/yippee.mp3");
-audio.volume = 0.2;
+audio.volume = 0.05;
 
 function playGame(){
     numGenerated = Math.floor(Math.random() * 100 + 1);

@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+*:visited{
+    color: white;
+}
+
+*::selection{
+    background: none;
+}
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(89, 0, 255), rgb(53, 6, 141), rgb(89, 0, 255));
+    background-blend-mode: color;
+    background-size: 500%;
+    animation: animate 40s linear infinite;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5vw 0 1vw;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.misc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+}
+
+#collected{
+    display: flex;
+    align-items: center;
+}
+
+#menuHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 10%;
+    cursor: pointer;
+}
+
+#menuHolder span{
+    content: "";
+    width: 50px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#menuHolder:hover span{
+    background-color: rgb(97, 181, 255);
+    transition: linear 0.25s;
+}
+
+main{
+    position: relative;
+    height: 90vh;
+}
+
+#menu{
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    top: 8vh;
+    left: 0px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    translate: 1vw;
+    width: 98%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+}
+
+.emoji{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.25em;
+    text-align: center;
+}
+
+.common{
+    color: rgb(33, 255, 33);
+}
+
+.rare{
+    color: rgb(0, 195, 255)
+}
+
+.epic{
+    color: rgb(143, 0, 179)
+}
+
+.legendary{
+    color: gold
+}
+
+p{
+    font-size: 0.5em;
+    margin: 20px 0 0 0;
+}
+
+p::selection{
+    background-color: rgb(55, 55, 245);
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 500% 0%;
+    }
+}
+
+@keyframes wiggle{
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.appeared{
+    animation: wiggle 0.75s ease-in-out alternate infinite, appear 1s;
+}
