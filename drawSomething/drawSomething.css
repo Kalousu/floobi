@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+*:visited{
+    color: white;
+}
+
+*::selection{
+    background: none;
+}
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(0, 140, 255), rgb(11, 87, 150), rgb(0, 140, 255));
+    background-blend-mode: color;
+    background-size: 500%;
+    animation: animate 40s linear infinite;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5vw 0 1vw;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#misc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+    height: 15vh;
+}
+
+#color-selector{
+    display: flex;
+    flex-direction: column;
+}
+
+#color-depictor{
+    width: 150px;
+    height: 70%;
+    margin-top: 10px;
+    background: rgb(255, 255, 255);
+}
+
+#properties{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tools{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 10vh;
+    margin-top: 3vh;
+}
+
+#tools div{
+    grid-row: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 500% 0%;
+    }
+}

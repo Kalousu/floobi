@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floobi | Happy Bird</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="happyBird.css">
+    <link rel="icon" href="../img/favicon.png">
+    <script src="https://kit.fontawesome.com/243224d683.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="floobi">
+            <a href="../index.html">
+                <h1 class="floobi-text">Floobi.</h1>
+            </a>
+        </div>
+    </header>
+    <div id="start-screen">
+        <div>
+            <h1 id="start-screen-text">Click to start!</h1>
+        </div>
+    </div>
+    <div id="game-over-screen">
+        <div>
+            <h1 id="game-over-screen-text">You lost!<br>Your final score is:<br><h1 id="final-score">100 points!!</h1></h1>
+        </div>
+    </div>
+    <img id="background-image" src="./background/bg_5.png">
+    <img id="bird-image" src="./background/bird.png">
+    <img id="pipe-up" src="./background/pipeUp.png">
+    <img id="pipe-down" src="./background/pipeDown.png">
+    <main id="game">
+        <h1 id="point-counter">hi</h1>
+        <div>
+            <canvas id="game-screen"></canvas>
+        </div>
+    </main>
+    <script src="happyBird.js"></script>
+</body>
+</html>

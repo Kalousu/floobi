@@ -74,11 +74,8 @@ function emojiSpawner(){
     let emojiName = emojiRarity();
     let time = Math.floor(Math.random() * 6500) + 1500;
     createEmoji(emojiName);
-    console.log(emojiName);
     setTimeout(emojiSpawner, time);
 }
-
-emojiSpawner();
 
 function showMenu(){
     if(visible == true){
@@ -89,3 +86,5 @@ function showMenu(){
         visible = true;
     }
 }
+
+window.onload = emojiSpawner();

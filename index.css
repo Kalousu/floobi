@@ -60,7 +60,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 88vh;
+    height: 78vh;
 }
 
 section{
@@ -130,7 +130,7 @@ div.guessNumber{
     animation: animate 17s linear infinite;
 }
 
-div.brickBreaker{
+div.drawSomething{
     background: linear-gradient(90deg, rgb(0, 140, 255), rgb(11, 87, 150), rgb(0, 140, 255));
     background-size: 500%;
     animation: animate 12s linear infinite;

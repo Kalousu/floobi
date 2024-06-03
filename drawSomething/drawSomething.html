@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floobi | Draw Something</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="drawSomething.css">
+    <link rel="icon" href="../img/favicon.png">
+    <script src="https://kit.fontawesome.com/243224d683.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="floobi">
+            <a href="../index.html">
+                <h1>Floobi.</h1>
+            </a>
+        </div>
+    </header>
+    <canvas></canvas>
+    <footer>
+        <div id="misc">
+            <div id="color-selector">
+                <div><label>Red</label><br><input id="color-red" type="range" value="0" min="0" max="255"></div>
+                <div><label>Green</label><br><input id="color-green" type="range" value="0" min="0" max="255"></div>
+                <div><label>Blue</label><br><input id="color-blue" type="range" value="0" min="0" max="255"></div>
+            </div>
+            <div id="color-depictor">
+                &nbsp;
+            </div>
+        </div>
+        <div id="properties">
+            <div><label>Opacity</label><br><input id="brush-opacity" type="range" value="100" min="0" max="100"><br></div>
+            <div><label>Brush Size</label><br><input id="brush-size" type="range" value="100" min="1" max="100"><br></div>
+        </div>
+        <div id="tools">
+            <div id="tools-brush" onclick="chooseTool('brush')">
+                <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <div id="tools-rubber" onclick="chooseTool('rubber')">
+                <i class="fa-solid fa-eraser"></i>
+            </div>
+            <div id="tools-clear" onclick="chooseTool('clear')">
+                <i class="fa-solid fa-broom"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="drawSomething.js"></script>
+</body>
+</html>
