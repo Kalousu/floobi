@@ -76,13 +76,33 @@ section{
     height: 95%;
 }
 
-section h1{
-    font-size: 6em;
+.about-me-paragraph, #secret-text{
+    font-size: 4em;
     margin: 0px;
     margin-bottom: 20%;
     animation: scroll linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 50%;
+    animation-range: entry 5% cover 30%;
+}
+
+#gerda, #caramel{
+    float:left;
+    border: 2px solid white;
+    border-radius: 20px;
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+
+#gerda-descriptor, #caramel-descriptor{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#secret-text{
+    color: hsl(0, 6%, 7%)
 }
 
 @keyframes animate{

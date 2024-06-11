@@ -72,8 +72,6 @@ header a{
 
 #point-counter{
     position: absolute;
-    bottom: 740px;
-    right: 300px;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;

@@ -91,3 +91,13 @@ footer{
         background-position: 500% 0%;
     }
 }
+
+@media screen and (max-width: 850px) {
+    #misc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #tools{
+        display: flex;
+    }
+}

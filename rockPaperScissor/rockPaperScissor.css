@@ -115,3 +115,35 @@ main{
         width: 23vh;
     }
 }
+
+@media screen and (max-width: 1520px) and (min-width: 880px) {
+    #choose{
+        font-size: 3em;
+    }
+
+    #robot, #choosing{
+        font-size: 6em;
+    }
+
+    #choice button{
+        font-size: 4em;
+        width: 15vh;
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #choose{
+        font-size: 2em;
+    }
+
+    #robot, #choosing{
+        font-size: 4em;
+    }
+
+    #choice button{
+        font-size: 3em;
+        width: 15vh;
+        height: 15vh;
+    }
+}
