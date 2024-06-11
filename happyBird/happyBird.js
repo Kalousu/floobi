@@ -23,7 +23,7 @@ window.onload = () => {
     gameOverScreen.style.top = (window.innerHeight / 2) - 250.5 + "px";
 
     let pointsText = document.getElementById("point-counter");
-    pointsText.style.left = (window.innerWidth / 2) + "px";
+    pointsText.style.left = (window.innerWidth / 2) + 530 + "px";
     pointsText.style.top = (window.innerHeight / 2) - 350 + "px";
 
 
@@ -42,8 +42,6 @@ window.onload = () => {
         canvas.height = gameHeight;
         startScreen.style.left = (window.innerWidth / 2) - 340 + "px";
         startScreen.style.top = (window.innerHeight / 2) - 100.5 + "px";
-        pointsText.style.left = (window.innerWidth / 2) + "px";
-        pointsText.style.top = (window.innerHeight / 2) - 350 + "px";
     }
 
     //classes

@@ -156,3 +156,15 @@ p::selection{
 .appeared{
     animation: wiggle 0.75s ease-in-out alternate infinite, appear 1s;
 }
+
+@media screen and (max-width: 1520px) and (min-width: 880px) {
+    #menu{
+        font-size: 1em
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #menu{
+        font-size: 0.5em;
+    }
+}

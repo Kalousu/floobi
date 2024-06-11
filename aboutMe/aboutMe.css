@@ -122,3 +122,17 @@ section{
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 1520px) and (min-width: 880px) {
+    #gerda, #caramel{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    #gerda, #caramel{
+        width: 200px;
+    }
+    
+}
